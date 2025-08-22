@@ -1,0 +1,8 @@
+.header-container{
+    width: 100%;
+    background-color: var(--main-color);
+    height: 20%;
+    color: var(--text-color);
+    text-align: center;
+    font-size: clamp(20px, 2vw, 100px)
+}
