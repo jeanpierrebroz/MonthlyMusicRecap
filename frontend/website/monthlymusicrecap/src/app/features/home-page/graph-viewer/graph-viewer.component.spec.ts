@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FooterComponent } from './footer.component';
+import { GraphViewerComponent } from './graph-viewer.component';
 
-describe('FooterComponent', () => {
-  let component: FooterComponent;
-  let fixture: ComponentFixture<FooterComponent>;
+describe('GraphViewerComponent', () => {
+  let component: GraphViewerComponent;
+  let fixture: ComponentFixture<GraphViewerComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FooterComponent]
+      imports: [GraphViewerComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(FooterComponent);
+    fixture = TestBed.createComponent(GraphViewerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
