@@ -34,7 +34,11 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": [
+                "node_modules/bokehjs/build/js/bokeh.js",
+                "node_modules/bokehjs/build/js/bokeh-widgets.js",
+                "node_modules/bokehjs/build/js/bokeh-tables.js"
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
