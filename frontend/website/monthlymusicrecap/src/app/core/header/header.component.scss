@@ -1,54 +1,52 @@
 .header-container {
     width: 100%;
     background-color: var(--main-color);
-    height: 20vh; /* Use viewport height instead of % for better consistency */
+    height: 20vh;
     color: var(--text-color);
     text-align: center;
     font-size: clamp(20px, 2vw, 100px);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative; /* Add for proper positioning context */
-    min-height: 80px; /* Ensure minimum usable height on small screens */
+    position: relative;
+    min-height: 80px;
 }
 
 .options-container {
-    width: auto; /* Let content determine width */
-    min-width: 120px; /* Ensure minimum touch target size */
+    width: auto;
+    min-width: 120px;
     display: flex;
     justify-content: space-between;
-    gap: 16px; /* Add space between items for better touch targets */
+    gap: 16px;
     position: absolute;
     top: 25%;
-    right: 16px; /* Use right positioning instead of left calculation */
-    transform: translateY(-50%); /* Center vertically */
+    right: 16px;
+    transform: translateY(-50%);
     
-    /* Mobile-first responsive adjustments */
     @media (max-width: 1200px) {
-        position: static; /* Stack below header content on mobile */
+        position: static;
         width: 100%;
         justify-content: center;
         margin-top: 12px;
-        gap: 24px; /* Larger gaps for easier touch interaction */
+        gap: 24px;
     }
     
     @media (max-width: 480px) {
-        flex-direction: column; /* Stack vertically on very small screens */
+        flex-direction: column;
         align-items: center;
         gap: 16px;
     }
 }
 
-/* Ensure touch targets are large enough on mobile */
 .options-container > * {
-    min-height: 44px; /* iOS recommended touch target size */
+    min-height: 44px;
     min-width: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
     
     @media (max-width: 768px) {
-        min-height: 48px; /* Android recommended size */
+        min-height: 48px;
         min-width: 48px;
     }
 }
