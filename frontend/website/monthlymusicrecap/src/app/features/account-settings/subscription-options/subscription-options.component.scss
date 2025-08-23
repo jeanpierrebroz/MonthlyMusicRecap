@@ -1,0 +1,46 @@
+.subscription-options-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50vw;
+}
+
+.subscription-options{
+    border: 5px solid white;
+    border-radius: 2px;
+    color: white;
+    width: 20vw;
+    text-align: left;
+    margin: 20px;
+    height: 30vh;
+
+    mat-list {
+        text-align: left;
+    }
+    
+    mat-list-item {
+        color: white;
+        text-align: left;
+        font-size: 2vh;
+        white-space: normal;
+        word-wrap: break-word;
+    }
+    
+    span[matListItemTitle] {
+        text-align: center !important;
+        color: white;
+        font-size: 2vh;
+        white-space: normal;
+        word-wrap: break-word;
+        margin-bottom: 10px;
+    }
+    span[matListItemLine] {
+        color: white !important;
+        text-align: left;
+        display: block;
+        font-size: 2vh;
+        white-space: normal;
+        word-wrap: break-word;
+        margin-bottom: 8px;
+    }
+}

@@ -1,6 +1,6 @@
 .homepage-container{
     background-color: var(--main-color);
-    width: 100%;
+    width: 100vw;
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -9,6 +9,8 @@
     text-align: center;
     color: var(--text-color);
     font-size: clamp(20px, 2vw, 100px);
+    overflow-y: scroll;
+    
 }
 
 .description-text{
