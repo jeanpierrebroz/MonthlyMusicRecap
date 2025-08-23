@@ -58,7 +58,6 @@ export class GraphViewerComponent implements OnInit {
             }]
         };
 
-        // If you have data from input, use it instead
         if (this.chart) {
             this.chartOption = this.chart;
         }

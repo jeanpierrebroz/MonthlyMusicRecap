@@ -52,11 +52,19 @@
         line-height: 1.5;
         white-space: normal;
         word-wrap: break-word;
-        padding: 0.5rem 0;
+        padding: 0.75rem 0 !important;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        height: auto !important;
+        min-height: 48px;
 
         &:last-child {
             border-bottom: none;
+        }
+
+        // Reset Material's default positioning
+        .mat-mdc-list-item-content {
+            height: auto !important;
+            padding: 0 !important;
         }
     }
     
@@ -72,7 +80,7 @@
         line-height: 1.2;
         text-transform: uppercase;
         letter-spacing: 1px;
-        padding: 0.5rem 0.25rem;
+        padding: 0.5rem 0;
     }
 
     span[matListItemLine] {
@@ -80,11 +88,11 @@
         text-align: left;
         display: block;
         font-size: 1.5rem;
-        line-height: 1.4;
+        line-height: 1.0;
         white-space: normal;
         word-wrap: break-word;
-        margin-bottom: 0.5rem;
         opacity: 0.9;
+        padding: 0.25rem 0;
     }
 }
 
@@ -99,7 +107,6 @@
     .subscription-options {
         width: 100%;
         max-width: 400px;
-
         margin-bottom: 1rem;
     }
 }
