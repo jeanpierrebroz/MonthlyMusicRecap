@@ -1,1 +1,7 @@
-<p>graph-viewer works!</p>
+@if (isBrowser) {
+    <div echarts [options]="chartOption" class="demo-chart"></div>
+  } @else {
+  <div>
+    <p>Chart loading...</p>
+  </div>
+}
