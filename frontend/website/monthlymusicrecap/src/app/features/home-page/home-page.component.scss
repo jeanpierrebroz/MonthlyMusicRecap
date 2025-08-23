@@ -1,7 +1,7 @@
 .homepage-container{
     background-color: var(--main-color);
-    width: 100vw;
-    height: 100vh;
+    width: 100%; // Change from 100vw to 100%
+    min-height: 100vh; // Change from height to min-height
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,9 +9,9 @@
     text-align: center;
     color: var(--text-color);
     font-size: clamp(20px, 2vw, 100px);
-    overflow-y: scroll;
+    overflow-y: auto; // Change from scroll to auto
     padding-top: 50px;
-
+    box-sizing: border-box; // Ensure padding is included in width
 }
 
 .description-text{

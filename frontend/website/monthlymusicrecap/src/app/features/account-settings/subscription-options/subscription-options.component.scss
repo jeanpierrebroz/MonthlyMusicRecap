@@ -16,7 +16,7 @@
     background: linear-gradient(135deg, var(--main-color) 0%, rgba(37, 40, 61, 0.9) 100%);
     color: var(--text-color);
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     text-align: left;
     padding: 1.5rem;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
@@ -63,21 +63,23 @@
     span[matListItemTitle] {
         text-align: center !important;
         color: var(--accent-color);
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         font-weight: 600;
         white-space: normal;
         word-wrap: break-word;
         margin-bottom: 1rem;
         display: block;
+        line-height: 1.2;
         text-transform: uppercase;
         letter-spacing: 1px;
+        padding: 0.5rem 0.25rem;
     }
 
     span[matListItemLine] {
         color: var(--text-color) !important;
         text-align: left;
         display: block;
-        font-size: 0.9rem;
+        font-size: 1.5rem;
         line-height: 1.4;
         white-space: normal;
         word-wrap: break-word;
@@ -97,6 +99,7 @@
     .subscription-options {
         width: 100%;
         max-width: 400px;
+
         margin-bottom: 1rem;
     }
 }
