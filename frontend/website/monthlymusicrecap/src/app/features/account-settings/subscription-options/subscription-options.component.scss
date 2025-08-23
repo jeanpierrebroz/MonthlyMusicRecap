@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    width: 80vw;
+    width: 40vw;
     max-width: 1200px;
     margin: 0 auto;
     gap: 2rem;
@@ -83,13 +83,6 @@
         word-wrap: break-word;
         margin-bottom: 0.5rem;
         opacity: 0.9;
-
-        &::before {
-            content: '✓';
-            color: var(--accent-color);
-            margin-right: 0.5rem;
-            font-weight: bold;
-        }
     }
 }
 
