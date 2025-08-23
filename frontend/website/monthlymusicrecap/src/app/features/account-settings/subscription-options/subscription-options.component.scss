@@ -1,46 +1,109 @@
-.subscription-options-container{
+.subscription-options-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 50vw;
+    align-items: stretch;
+    width: 80vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+    padding: 2rem 0;
 }
 
-.subscription-options{
-    border: 5px solid white;
-    border-radius: 2px;
-    color: white;
-    width: 20vw;
+.subscription-options {
+    border: 2px solid var(--accent-color);
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--main-color) 0%, rgba(37, 40, 61, 0.9) 100%);
+    color: var(--text-color);
+    width: 100%;
+    max-width: 300px;
     text-align: left;
-    margin: 20px;
-    height: 30vh;
+    padding: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 40px rgba(237, 184, 139, 0.2);
+        border-color: rgba(237, 184, 139, 0.8);
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, var(--accent-color), #f4a261);
+    }
 
     mat-list {
         text-align: left;
+        padding: 0;
     }
     
     mat-list-item {
-        color: white;
+        color: var(--text-color);
         text-align: left;
-        font-size: 2vh;
+        font-size: 1rem;
+        line-height: 1.5;
         white-space: normal;
         word-wrap: break-word;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+        &:last-child {
+            border-bottom: none;
+        }
     }
     
     span[matListItemTitle] {
         text-align: center !important;
-        color: white;
-        font-size: 2vh;
+        color: var(--accent-color);
+        font-size: 1.5rem;
+        font-weight: 600;
         white-space: normal;
         word-wrap: break-word;
-        margin-bottom: 10px;
+        margin-bottom: 1rem;
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 1px;
     }
+
     span[matListItemLine] {
-        color: white !important;
+        color: var(--text-color) !important;
         text-align: left;
         display: block;
-        font-size: 2vh;
+        font-size: 0.9rem;
+        line-height: 1.4;
         white-space: normal;
         word-wrap: break-word;
-        margin-bottom: 8px;
+        margin-bottom: 0.5rem;
+        opacity: 0.9;
+
+        &::before {
+            content: '✓';
+            color: var(--accent-color);
+            margin-right: 0.5rem;
+            font-weight: bold;
+        }
+    }
+}
+
+// Responsive design
+@media (max-width: 768px) {
+    .subscription-options-container {
+        flex-direction: column;
+        width: 90vw;
+        align-items: center;
+    }
+
+    .subscription-options {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 1rem;
     }
 }
